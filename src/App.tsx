@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import Can from "./components/Can";
 import { useScroll } from "framer-motion";
+import Navbar from "./components/Navbar";
 
 function App() {
   const ref = useRef(null);
@@ -16,10 +17,11 @@ function App() {
 
   return (
     <div className="App" ref={ref}>
-      <Can SCREEN_HEIGHT={SCREEN_HEIGHT} scrollY={scrollY} animate={true}/>
+      <Can SCREEN_HEIGHT={SCREEN_HEIGHT * 0.95} scrollY={scrollY} animate={true}/>
+      <Navbar/>
       <Hero/>
       <Home/>
-      <Product SCREEN_HEIGHT={SCREEN_HEIGHT} scrollY={scrollY}/>
+      <Product SCREEN_HEIGHT={SCREEN_HEIGHT-300} scrollY={scrollY}/>
     </div>
   );
 }

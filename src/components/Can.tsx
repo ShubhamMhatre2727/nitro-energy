@@ -17,17 +17,17 @@ export default function Can({SCREEN_HEIGHT, scrollY, animate}:{SCREEN_HEIGHT:num
 
   const width = useTransform(
     scrollY,
-    [0, SCREEN_HEIGHT / 2, SCREEN_HEIGHT],
+    [0, SCREEN_HEIGHT * 0.55, SCREEN_HEIGHT],
     ["50%", "60%", "30%"]
   );
   const right = useTransform(
     scrollY,
-    [SCREEN_HEIGHT / 2 + 10, SCREEN_HEIGHT],
-    ["0px", "-325px"]
+    [SCREEN_HEIGHT * 0.55, SCREEN_HEIGHT * 0.97],
+    ["0px", "-345px"]
   );
   const rotate = useTransform(
     scrollY,
-    [SCREEN_HEIGHT / 2 + 10, SCREEN_HEIGHT],
+    [SCREEN_HEIGHT * 0.55, SCREEN_HEIGHT * 0.9],
     ["0deg", "-90deg"]
   );
   return (
@@ -60,7 +60,7 @@ export default function Can({SCREEN_HEIGHT, scrollY, animate}:{SCREEN_HEIGHT:num
             "--right": "0px",
             rotate:"-90deg",
             width:"100%",
-            translateY:"-55%"
+            translateY:"100%"
           }}
       />
   )
