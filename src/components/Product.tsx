@@ -28,7 +28,7 @@ export default function Product({SCREEN_HEIGHT, scrollY}:{SCREEN_HEIGHT:number, 
             <div style={{width:"100%", aspectRatio:1/1, zIndex:1}}>
             <Can SCREEN_HEIGHT={SCREEN_HEIGHT} scrollY={scrollY} animate={false}/>
             </div>
-            <motion.div className="disk" whileInView={{background:"radial-gradient(circle, #272727 0%, #000000 40%, #ffffff 100%)"}}/>
+            <motion.div className="disk" transition={{duration:1}} whileInView={{background:"radial-gradient(circle, #272727 0%, #000000 40%, #ffffff 100%)"}}/>
             <img src="/images/Nitro Green.png" alt=""/>
             <small>High intensity</small>
             <strong>12.0 $</strong>
