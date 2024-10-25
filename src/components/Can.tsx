@@ -54,7 +54,7 @@ export default function Can({SCREEN_HEIGHT, scrollY, animate}:{SCREEN_HEIGHT:num
             rotate:"-90deg",
             width:"100%",
             translateY:"100%"
-          }}
+          }as any}
       />
   )
 }
