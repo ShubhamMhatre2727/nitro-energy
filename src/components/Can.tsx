@@ -1,13 +1,6 @@
 import {
     motion,
-    useMotionValueEvent,
-    useScroll,
-    useAnimation,
-    useMotionTemplate,
-    useMotionValue,
     useTransform,
-    easeInOut,
-    easeIn,
     MotionValue,
   } from "framer-motion";
 
@@ -51,7 +44,7 @@ export default function Can({SCREEN_HEIGHT, scrollY, animate}:{SCREEN_HEIGHT:num
           top: "50%",
           width,
           rotate,
-        }}
+        } as any}
       />
       :
       <motion.div
